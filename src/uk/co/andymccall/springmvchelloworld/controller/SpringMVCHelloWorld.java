@@ -14,12 +14,13 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class SpringMVCHelloWorld
 {
-	@RequestMapping("/welcome")
-	public ModelAndView helloWorld() {
+	
+	@RequestMapping(value={"/", "/index"})
+	public ModelAndView index() {
  
 		String message = "<br><div style='text-align:center;'>"
-				+ "<h3> Hello World, Spring MVC</h3>This message is coming from SpringMVCHelloWorld.java </div><br><br>";
-		return new ModelAndView("welcome", "message", message);
+				+ "<h3> Hello World, Spring MVC</h3>Index - SpringMVCHelloWorld.java </div><br><br>";
+		return new ModelAndView("index", "message", message);
 		
 	}
 	
@@ -27,8 +28,17 @@ public class SpringMVCHelloWorld
 	public ModelAndView about() {
  
 		String message = "<br><div style='text-align:center;'>"
-				+ "<h3> Hello World, Spring MVC</h3>This is the about page within SpringMVCHelloWorld.java </div><br><br>";
+				+ "<h3> Hello World, Spring MVC</h3>About - SpringMVCHelloWorld.java </div><br><br>";
 		return new ModelAndView("about", "message", message);
+		
+	}
+	
+	@RequestMapping("/contact")
+	public ModelAndView contact() {
+ 
+		String message =  "<br><div style='text-align:center;'>"
+				+ "<h3> Hello World, Spring MVC</h3>Contact - SpringMVCHelloWorld.java </div><br><br>";
+		return new ModelAndView("contact", "message", message);
 		
 	}
 	

@@ -19,13 +19,13 @@
 	<nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">SpringMVCHelloWorld</a>
+			<a class="navbar-brand" href="index.html">SpringMVCHelloWorld</a>
 		</div>
 		<div>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li class="active"><a href="index.html">Index</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
